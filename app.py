@@ -11,8 +11,8 @@ import pandas as pd
 import plotly.express as px
 
 # Cargar datos
-df_final = pd.read_excel("/Users/david/Desktop/criminal_data/dataset_final.xlsx")
-df_final_2 = pd.read_excel("/Users/david/Desktop/criminal_data/dataset_final_2.xlsx")
+df_final = pd.read_excel("./dataset_final.xlsx")
+df_final_2 = pd.read_excel("./dataset_final_2.xlsx")
 
 # Título de la App
 st.title("🚨 Criminalidad en España")

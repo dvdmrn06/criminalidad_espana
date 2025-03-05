@@ -5,8 +5,8 @@
 
 import pandas as pd
 
-df_1 = pd.read_excel("/Users/david/Desktop/criminal_data/df1_nacionales_extranjeros.xlsx")
-df_2 = pd.read_excel("/Users/david/Desktop/criminal_data/mapeo_poblacional_nacional_extranjero.xlsx")
+df_1 = pd.read_excel("./df1_nacionales_extranjeros.xlsx")
+df_2 = pd.read_excel("./mapeo_poblacional_nacional_extranjero.xlsx")
 
 #LIMPIEZA Y CREACIÓN DE DATASET FINAL (1)
 
@@ -52,11 +52,11 @@ df_final["tasa_por_100k"] = (df_final["total_delincuentes"] / df_final["poblaci�
 df_final.isnull().sum()
 df_final.dtypes
 
-df_final.to_excel("/Users/david/Desktop/criminal_data/dataset_final.xlsx", index=False)
+df_final.to_excel("./dataset_final.xlsx", index=False)
 
 
-df_3 = pd.read_excel("/Users/david/Desktop/criminal_data/df_1_pais.xlsx")
-df_4 = pd.read_excel("/Users/david/Desktop/criminal_data/df_2_mapeo_pais.xlsx")
+df_3 = pd.read_excel("./df_1_pais.xlsx")
+df_4 = pd.read_excel("./df_2_mapeo_pais.xlsx")
 
 #LIMPIEZA Y CREACIÓN DE DATASET FINAL (2)
 
@@ -105,5 +105,5 @@ df_final_2.isnull().sum()
 df_final_2.dtypes
 
 df_final_2 = df_final_2[df_final_2['país'] != 'España']
-df_final_2.to_excel("/Users/david/Desktop/criminal_data/dataset_final_2.xlsx", index=False)
+df_final_2.to_excel("./dataset_final_2.xlsx", index=False)
 
